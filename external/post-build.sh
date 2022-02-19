@@ -29,3 +29,6 @@ mkdir -p $TARGET_DIR/etc/docker
 cp $BOARD_DIR/daemon.json $TARGET_DIR/etc/docker
 
 mkdir -p $TARGET_DIR/etc/systemd/system/docker.service.d
+
+cp -f $BOARD_DIR/containerd.service $TARGET_DIR/usr/lib/systemd/system/containerd.service
+ln -sf /usr/lib/systemd/system/containerd.service $TARGET_DIR/usr/lib/systemd/system/multi-user.target.wants/containerd.service
