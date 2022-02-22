@@ -1,0 +1,5 @@
+config BR2_PACKAGE_ETCD
+	bool "etcd"
+	depends on BR2_PACKAGE_HOST_GO_TARGET_ARCH_SUPPORTS
+	help
+	  ectd
