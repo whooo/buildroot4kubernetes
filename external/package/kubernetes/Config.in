@@ -4,3 +4,56 @@ config BR2_PACKAGE_KUBERNETES
 	  Production-Grade Container Orchestration
 
 	  https://kubernetes.io/
+
+if BR2_PACKAGE_KUBERNETES
+
+config BR2_PACKAGE_KUBERNETES_KUBELET
+	bool "kubernetes kubelet"
+	help
+	  Production-Grade Container Orchestration
+
+	  kubelet package
+
+config BR2_PACKAGE_KUBERNETES_KUBE_APISERVER
+	bool "kubernetes kube-apiserver"
+	help
+	  Production-Grade Container Orchestration
+
+	  kube-apiserver package
+
+config BR2_PACKAGE_KUBERNETES_KUBE_CONTROLLER_MANAGER
+	bool "kubernetes kube-controller-manager"
+	help
+	  Production-Grade Container Orchestration
+
+	  kube-controller-manager package
+
+config BR2_PACKAGE_KUBERNETES_KUBE_SCHEDULER
+	bool "kubernetes kube-scheduler"
+	help
+	  Production-Grade Container Orchestration
+
+	  kube-scheduler package
+
+config BR2_PACKAGE_KUBERNETES_KUBE_PROXY
+	bool "kubernetes kube-proxy"
+	help
+	  Production-Grade Container Orchestration
+
+	  kube-proxy package
+
+config BR2_PACKAGE_KUBERNETES_KUBECTL
+	bool "kubernetes kubectl"
+	help
+	  Production-Grade Container Orchestration
+
+	  kubectl package
+
+config BR2_PACKAGE_KUBERNETES_KUBEADM
+	bool "kubernetes kubeadm"
+	help
+	  Production-Grade Container Orchestration
+
+	  kubeadm package
+
+endif

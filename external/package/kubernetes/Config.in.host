@@ -1,0 +1,17 @@
+config BR2_PACKAGE_HOST_KUBERNETES
+	bool "host kubernetes"
+	help
+	  Production-Grade Container Orchestration
+
+	  host packages
+
+if BR2_PACKAGE_HOST_KUBERNETES
+
+config BR2_PACKAGE_HOST_KUBERNETES_KUBEADM
+        bool "host kubernetes-kubeadm"
+        help
+          Production-Grade Container Orchestration
+
+	  kubeadm host package
+
+endif
